@@ -1,0 +1,10 @@
+fNIRS data file
+
+Row 1 - Time stamps
+Row 2 - Row 17 - fNIRS Optical Densities (16 Rows)
+Row 18 - Row 33 - fNIRS Concentrations (16 Rows)
+Row 34 - Tep
+Row 35 - Row 50 - Signal Quality level (16 Rows)
+Row 51 - 58 - Signal Quality (8 Rows)
+Row 59 - Marker
+
