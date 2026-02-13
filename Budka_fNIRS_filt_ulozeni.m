@@ -4,7 +4,7 @@ clc;clear all;close all;
 % --- 1. VÝBĚR SOUBORU (FILE EXPLORER) ---
 [file, path] = uigetfile('*.mat', 'Vyberte datový soubor (.mat)');
 
-% Kontrola, zda uživatel nekliknul na "Zrušit"
+% Kontrola, zda uživatel nekliknul na "Zrušit" nnn
 if isequal(file, 0)
     disp('Výběr souboru byl zrušen. Konec programu.');
     return;
@@ -23,19 +23,19 @@ full_path_to_excel = fullfile(path, excel_name_short);
 timestamps = Out(1,1000:end);
 SampleFreq = 1/(timestamps (1,2) - timestamps(1,1))
 Marker = Out(59,1000:end);
+if length(Marker) > 300
+    Marker(end-300) = 1;
+end
 Mrk_Locs = find(Marker == 1);
 
 
+
 if length (Mrk_Locs) > 4
-    
-    if length(Marker) > 300
-        Marker(end-300) = 1;
-    end
-    
+
     i = 1;
     while i < length(Mrk_Locs)
         Mrk_Diff = Mrk_Locs(i+1) - Mrk_Locs(i);
-        
+
         if Mrk_Diff < 2000
             Marker(Mrk_Locs(i)) = 0;
             Mrk_Locs(i) = [];
@@ -46,8 +46,8 @@ if length (Mrk_Locs) > 4
 
 else
     disp('Please check Markers and add manually.')
-
 end
+
 HR = Out(34,1000:end);
 figure();
 plot(timestamps, HR, 'linewidth',1);
