@@ -6,6 +6,9 @@ Marker = Marker - 0.5;
 
 figure(Name = 'Heart Rate');
 plot(timestamps, HR, 'linewidth',1, 'Color', 'R');
+hold on
+plot(timestamps, Marker*90, 'linewidth',1, 'Color', 'M')
+hold off
 
 figure(Name = 'All trends');
 plot(timestamps, Trends,'linewidth',1);
