@@ -4,7 +4,7 @@ function [Wavelet_Signals,Poly_Signals] = Fn_Filter(Raw_Signals, timestamps)
 %Wavelet order
     n=10; 
     w='db15'; % signal wavelet
-    poly_degree = 10;
+    poly_degree = 3;
 
     % Empty matrix prep
     [num_channels, num_samples] = size(Raw_Signals);

@@ -1,0 +1,15 @@
+Měření zda aktivita jemné motoriky prstů jde vidět na fNIRS.
+4 měření
+Průběh:
+10s relax
+10s opakované pomalé spojení palec ukazováček
+10s relax
+10s opakované pomalé spojení palec prostředníček
+10s relax
+10s opakované pomalé spojení palec prsteníček
+10s relax
+10s opakované pomalé spojení palec malíček
+10s relax
+
+Lichá čísla na konci názvu jsou P ruka
+Sudá čísla na konci názvu jsou L ruka

@@ -1,5 +1,5 @@
 clc; clear all; close all;
-%  This function serves for diagnosis and testing of filters and other
+%  This code serves for diagnosis and testing of filters and other
 %  methods. Should be clean and faster to use and adapt then full filtering
 %  and showing functions.
 
